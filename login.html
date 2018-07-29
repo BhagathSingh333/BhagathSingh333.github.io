@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo</title>
+	<link rel="stylesheet" href="index.css">
+	<script>
+		function validate()
+{
+	var username=document.getElementById('username').value;
+	var password=document.getElementById('password').value;
+	if (username=="17mis1043" && password=="admin") {
+		alert("login successful");
+	}
+	else{
+		alert("login unsuccessful");
+	}
+
+
+}
+	</script>
+	
+</head>
+<body bgcolor="grey">
+	<h1> login form</h1>
+	<form  method="POST" id="login form">
+		<label>username :</label>
+		<input id="username" type="text"><br>
+		<label>password :</label>
+		<input id="password" type="password"><br>
+		<input id="submit" type="button" value="LOGIN" onclick="validate()">
+
+	</form>
+	
+</body>
+</html>
