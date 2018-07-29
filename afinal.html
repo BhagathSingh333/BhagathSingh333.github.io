@@ -1,0 +1,28 @@
+<html>
+  <head><title>It's a rainy day</title>
+    <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+    
+    
+    <script src="https://unpkg.com/aframe-mountain-component@0.3.2/dist/aframe-mountain-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.5/dist/aframe-particle-system-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+    <a-entity position="0 2.25 -15" height="6" width="2" particle-system="preset: rain"></a-entity>
+    <a-entity position="0 2.25 -15" height="3" width="0.5" particle-system="preset: fog"></a-entity>
+    <a-entity position="0 2.25 -15" height="3" width="0.5" particle-system="preset: snow"></a-entity>
+    <a-entity position="0 2.25 -15" height="3" width="0.5" particle-system="preset: storm"></a-entity>
+    <a-entity animation="property: rotation; to: 0 0 360;dur:4000; easing: linear; loop: true">
+      <a-entity mixin="light" position="30 0 0"></a-entity>
+
+   
+
+    
+    <a-entity src="images/pano.jpg"></a-entity>
+    <a-sky src="images/maxresdefault.jpg"></a-sky>
+    </a-scene>
+
+ 
+  </body>
+</html>
